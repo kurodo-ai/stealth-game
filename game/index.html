@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiet Hands — a top-down stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b0f14;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    display: block;
+    width: min(100vw, calc(100vh * 1.6));
+    height: min(100vh, calc(100vw / 1.6));
+    image-rendering: auto;
+    cursor: crosshair;
+    background: #232a33;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
